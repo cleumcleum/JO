@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+
+  {% set titre="Accueil" %}
+  <head>
+    <title>{{NomPage}}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="/static/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/static/css/bootstrap.css">
+    <link rel="stylesheet" href="/static/css/fonts.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
+</head>
+
+<div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="/static/images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+    <div class="preloader">
+      <div class="preloader-body">
+        <div class="cssload-container">
+          <div class="cssload-speeding-wheel"></div>
+        </div>
+        <p>Chargement...</p>
+      </div>
+    </div>
+  <div class="page">
+
+  </div>
+
+
+
+<body>
+  
+        
+        {% include("layout/nav.html") %}
+
+     
+    <!-- Swiper-->
+    <section class="section section-lg section-main-bunner section-main-bunner-filter text-center">
+      <div class="main-bunner-img"
+        style="background-image: url(&quot;/static/images/bg-bunner-2.jpg&quot;); background-size: cover;"></div>
+      <div class="main-bunner-inner">
+        <div class="container">
+          <div class="box-default">
+            <h1 class="box-default-title">Bienvenue sur le site de pronostics des JO</h1>
+            <div class="box-default-decor"></div>
+            <p class="big box-default-text">On est les champions, on est les champions, on est, on est, on est les
+              championssss</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="bg-gray-1">
+      <section class="section-transform-top">
+        <div class="container">
+          <div class="box-booking">
+            <form class="rd-form rd-mailform booking-form">
+              <div>
+                <p class="booking-title">Name</p>
+                <div class="form-wrap">
+                  <input class="form-input" id="booking-name" type="text" name="name" data-constraints="@Required">
+                  <label class="form-label" for="booking-name">Your name</label>
+                </div>
+              </div>
+              <div>
+                <p class="booking-title">Phone</p>
+                <div class="form-wrap">
+                  <input class="form-input" id="booking-phone" type="text" name="phone" data-constraints="@Numeric">
+                  <label class="form-label" for="booking-phone">Your phone number</label>
+                </div>
+              </div>
+              <div>
+                <p class="booking-title">Date</p>
+                <div class="form-wrap form-wrap-icon"><span class="icon mdi mdi-calendar-text"></span>
+                  <input class="form-input" id="booking-date" type="text" name="date" data-constraints="@Required"
+                    data-time-picker="date">
+                </div>
+              </div>
+              <div>
+                <p class="booking-title">no. of people</p>
+                <div class="form-wrap">
+                  <select data-placeholder="2">
+                    <option label="placeholder"></option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                  </select>
+                </div>
+              </div>
+              <div>
+                <button class="button button-lg button-gray-600" type="submit">Check availability</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+    </div>
+    </section>
+    <!-- Page Footer-->
+
+    {% include("layout/footer.html") %}
+
+
+
+  {% include("layout/scripts.html") %}
+</body>
+
+</html> 
